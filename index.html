@@ -453,7 +453,11 @@
             <p class="subscribe-title">Subscribe</p>
             <form class="subscribe-form"> 
               <input type="email" placeholder="E-mail" id="mail">
-             <button type="submit" class="button subscribe">Subscribe</button>
+             <button type="submit" class="button subscribe">Subscribe
+              <svg class="send-icon">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+             </button>
               
             </form>
           </div>
@@ -464,38 +468,44 @@
       <div class="modal">
 
         <div class="close">
-          <a href="" class="modal-close" data-modal-close>
+          <button class="modal-close" data-modal-close>
             <svg class="close-icon">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="form">
-        <label class="form-field">
-        <span class="form-name">Name</span>  
+        <label class="form-field"> Name
+        <span class="input-field">
         <input class="form-input" type="text" name="name"> 
         <span class="icon">
           <svg class="form-icon" width="18px" height="24px">
             <use href="./images/symbol-defs.svg#icon-frame"></use>
           </svg>
         </span>
+      </span>
         </label>
+
         <label class="form-field">Phone
-        <input class="form-input" type="tel" name="tel">
+          <span class="input-field">
+          <input class="form-input" type="tel" name="tel">
         <span class="icon">
           <svg class="form-icon" width="18px" height="24px">
           <use href="./images/symbol-defs.svg#icon-phone"></use>
           </svg>
         </span>
+      </span>
         </label>
 
         <label class="form-field"> Email
+        <span class="input-field">
         <input class="form-input" type="email" name="mail">
         <span class="icon">
           <svg class="form-icon" width="18px" height="24px">
           <use href="./images/symbol-defs.svg#icon-email"></use>
           </svg>
+        </span>
         </span>
         </label>
       
@@ -511,7 +521,7 @@
           <use href="./images/symbol-defs.svg#icon-click"></use>
           </svg>
         </span>
-         I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+         I accept the terms and conditions of the <a class="policy-link" href="">Privacy Policy</a></label>
         </div>
           <div class="send">
             <button type="submit" class="button send">Send</button>
